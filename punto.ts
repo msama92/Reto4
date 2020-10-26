@@ -69,6 +69,7 @@ export class Punto {
         {
             if (this.calcularDistancia(puntos[i])<distancia)
             {
+                distancia =this.calcularDistancia(puntos[i]);
                 newPunto = puntos[i]
             }
         }

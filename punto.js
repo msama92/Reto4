@@ -58,6 +58,7 @@ var Punto = /** @class */ (function () {
         var distancia = this.calcularDistancia(puntos[0]);
         for (var i = 0; i < puntos.length; i++) {
             if (this.calcularDistancia(puntos[i]) < distancia) {
+                distancia = this.calcularDistancia(puntos[i]);
                 newPunto = puntos[i];
             }
         }
